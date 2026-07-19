@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Proyectos — Estudio Verde</title>
+<meta name="description" content="Conocé los proyectos de arquitectura y paisajismo de Estudio Verde.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="contenedor">
+    <a href="../index.html" class="wordmark">Estudio<span>Verde</span></a>
+    <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-menu">
+      <a href="../index.html">Home</a>
+      <a href="index.html" class="activo">Proyectos</a>
+      <a href="../nosotros.html">Nosotros</a>
+      <a href="../contacto.html">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero hero-mini" style="background-image: linear-gradient(180deg, rgba(20,22,15,0.25) 0%, rgba(15,18,12,0.65) 55%, rgba(12,15,10,0.9) 100%), url('https://picsum.photos/seed/estudioverde-proyectos/1600/700');">
+  <div class="contenedor hero-contenido">
+    <span class="eyebrow" style="color:#cfe0c8;">Proyectos</span>
+    <h1>Arquitectura y paisajismo, proyecto a proyecto</h1>
+  </div>
+</section>
+
+<section>
+  <div class="contenedor">
+    <!--
+      Grilla de proyectos: por ahora hay 2 casos cargados (Casa Haras y Casa La Toscana).
+      Para sumar un proyecto nuevo, copiar un <a class="tarjeta-proyecto"> y crear su página
+      individual usando casa-haras.html como plantilla.
+    -->
+    <div class="grilla-proyectos">
+      <a class="tarjeta-proyecto" href="casa-haras.html">
+        <img src="../img/proyectos/casa-haras-fachada.webp" alt="Casa Haras — fachada">
+        <div class="tarjeta-proyecto-info">
+          <span>Arquitectura</span>
+          <h3>Casa Haras</h3>
+        </div>
+      </a>
+      <a class="tarjeta-proyecto" href="casa-la-toscana.html">
+        <img src="../img/proyectos/toscana-02.webp" alt="Casa La Toscana — paisajismo">
+        <div class="tarjeta-proyecto-info">
+          <span>Paisajismo</span>
+          <h3>Casa La Toscana</h3>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="cta-final">
+  <div class="contenedor centrado">
+    <h2>¿Tenés un proyecto en mente?</h2>
+    <p>Contanos tu idea y coordinamos una charla, sin compromiso.</p>
+    <div class="hero-acciones" style="justify-content:center;">
+      <a href="../contacto.html" class="boton boton-primario" style="background:#fff; color:var(--verde-oscuro);">Escribinos</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="contenedor">
+    <div>
+      <a href="../index.html" class="wordmark" style="color:#fff;">Estudio<span style="color:var(--tierra);">Verde</span></a>
+      <p style="margin-top:0.75rem; max-width:340px;">Arquitectura y paisajismo con conciencia ambiental. Rosario, con cita previa.</p>
+    </div>
+    <div class="footer-links">
+      <h4>Navegación</h4>
+      <a href="../index.html">Home</a>
+      <a href="index.html">Proyectos</a>
+      <a href="../nosotros.html">Nosotros</a>
+      <a href="../contacto.html">Contacto</a>
+    </div>
+    <div class="footer-links">
+      <h4>Contacto</h4>
+      <a href="https://wa.me/5491164099986?text=Hola!%20Vi%20la%20web%20de%20Estudio%20Verde%20y%20me%20gustar%C3%ADa%20hacer%20una%20consulta." target="_blank" rel="noopener">WhatsApp</a>
+      <a href="mailto:estudioverde@gmail.com">estudioverde@gmail.com</a>
+      <a href="https://instagram.com/estudioverde" target="_blank" rel="noopener">@estudioverde</a>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 Estudio Verde. Rosario, con cita previa.</div>
+</footer>
+
+<a class="whatsapp-flotante" href="https://wa.me/5491164099986?text=Hola!%20Vi%20la%20web%20de%20Estudio%20Verde%20y%20me%20gustar%C3%ADa%20hacer%20una%20consulta." target="_blank" rel="noopener" aria-label="Escribinos por WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.28-1.38a9.9 9.9 0 0 0 4.76 1.21h.01c5.46 0 9.9-4.45 9.9-9.92 0-2.65-1.03-5.14-2.9-7.01A9.86 9.86 0 0 0 12.04 2m0 1.67c2.24 0 4.35.87 5.93 2.45a8.23 8.23 0 0 1 2.42 5.8c0 4.55-3.71 8.25-8.36 8.25a8.3 8.3 0 0 1-4.22-1.15l-.3-.18-3.13.82.84-3.04-.2-.31a8.18 8.18 0 0 1-1.27-4.39c0-4.55 3.71-8.25 8.29-8.25M8.53 7.02c-.17 0-.45.06-.68.32-.23.25-.9.87-.9 2.13 0 1.25.92 2.46 1.05 2.63.13.17 1.79 2.87 4.43 3.9 2.19.86 2.63.69 3.11.65.48-.04 1.55-.63 1.77-1.24.22-.6.22-1.12.15-1.23-.06-.11-.24-.17-.5-.3-.26-.13-1.55-.77-1.79-.86-.24-.09-.42-.13-.59.13-.17.26-.68.86-.83 1.03-.15.17-.31.19-.57.06-.26-.13-1.1-.4-2.09-1.28-.77-.68-1.29-1.53-1.44-1.79-.15-.26-.02-.4.11-.53.12-.12.26-.31.39-.47.13-.15.17-.26.26-.43.09-.17.04-.32-.02-.45-.06-.13-.59-1.44-.82-1.97-.21-.51-.43-.44-.59-.45-.15-.01-.32-.01-.5-.01"/></svg>
+</a>
+
+<script src="../js/main.js"></script>
+</body>
+</html>
