@@ -250,6 +250,15 @@ section {
   color: #fff;
 }
 
+.hero-contenido .eyebrow {
+  color: #cfe0c8;
+}
+
+.hero .boton-secundario {
+  border-color: #fff;
+  color: #fff;
+}
+
 .hero-acciones {
   margin-top: 1.75rem;
   display: flex;
@@ -527,6 +536,11 @@ section {
   color: var(--verde-oscuro);
 }
 
+.cta-final .boton-primario {
+  background: #fff;
+  color: var(--verde-oscuro);
+}
+
 /* ---------- Ficha técnica / página de proyecto ---------- */
 .proyecto-intro {
   max-width: 720px;
@@ -740,13 +754,21 @@ section {
 .footer {
   background: var(--verde-oscuro);
   color: #e9e6dd;
-  padding: 3rem 0 2rem;
+  padding: 3rem 0 5rem;
 }
 
 .footer .contenedor {
   display: grid;
   gap: 2rem;
   grid-template-columns: 1fr;
+}
+
+.footer .wordmark {
+  color: #fff;
+}
+
+.footer .wordmark span {
+  color: var(--tierra);
 }
 
 .footer h4 {
