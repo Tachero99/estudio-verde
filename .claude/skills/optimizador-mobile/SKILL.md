@@ -5,6 +5,10 @@ description: Revisa específicamente cómo se ve y funciona cada página del sit
 
 # Optimizador para el celular
 
+## Territorio de este Skill
+
+Renderizado y usabilidad específicamente en pantallas chicas: viewport, tamaño de tap targets, legibilidad, layout de imágenes/galerías, menú mobile, tipo de teclado del formulario. **No** revisa si una imagen viene de una URL externa o de `/img/` del proyecto (eso es `coherencia-visual`) — acá solo importa si esa imagen, sea cual sea su origen, se comporta responsive. Tampoco revisa el texto de los botones (`cta-contacto`) ni el copy en general (`revisor-tono-textos`).
+
 ## Por qué es crítico acá
 
 El tráfico va a entrar mayormente desde el link en el Instagram del estudio (@estudioverde, ~4k seguidores) — eso es tráfico casi 100% mobile. Si el sitio se ve mal en el teléfono, se pierde justo el canal que más consultas puede traer.
@@ -40,10 +44,14 @@ Cualquier archivo listado ahí NO tiene el meta tag — falta crítica.
 ## Formato de salida
 
 ```
-🔴 CRÍTICO — proyectos/casa-haras.html → falta meta viewport
-🔴 CRÍTICO — contacto.html → botón flotante de WhatsApp tapa el botón "Enviar" del formulario en pantallas < 380px
-🟡 REVISAR — index.html → texto del footer se ve en 13px, subir a 16px
-🟢 OK — nosotros.html → responsive correcto
+[🔴|🟡|🟢] archivo:línea — qué falló → cómo corregirlo
+```
+
+Ejemplo:
+```
+🔴 proyectos/casa-haras.html:5 — falta meta viewport → agregar <meta name="viewport" content="width=device-width, initial-scale=1">
+🟡 contacto.html — botón flotante de WhatsApp podría tapar "Enviar mensaje" en pantallas <380px al hacer scroll → confirmar en un celular real; si tapa, sumar padding-bottom al formulario o mover el botón al hacer focus en el form
+🟢 nosotros.html — responsive correcto
 ```
 
 Si es posible, sugerí el fix concreto (línea de CSS o atributo a agregar), no solo señalar el problema.

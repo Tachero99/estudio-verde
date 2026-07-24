@@ -5,6 +5,10 @@ description: Escribe y revisa botones, links y frases de llamado a la acción (C
 
 # Asistente de CTA y contacto
 
+## Territorio de este Skill
+
+Redacción y consistencia de los botones/links de contacto: verbo de acción, longitud, tono del mensaje precargado de WhatsApp. **No** valida si el número de WhatsApp/mail/Instagram es el correcto (eso es `verificador-reglas-cliente`, que tiene la tabla de datos literales) ni si el botón es tocable en mobile (`optimizador-mobile`). Si un CTA menciona un precio, este Skill no lo marca como su propio hallazgo — eso ya es 🔴 de `verificador-reglas-cliente`; acá solo se comenta si, dejando de lado el precio, el resto de la redacción del botón es clara y con el tono correcto.
+
 ## Por qué importa en este proyecto puntual
 
 El problema que resuelve la web es concreto: hoy las consultas "se pierden en el camino" entre mail, Instagram y el WhatsApp personal de Martín. Cada CTA del sitio existe para evitar que eso siga pasando. Un CTA vago no cumple ese objetivo.
@@ -27,7 +31,18 @@ El problema que resuelve la web es concreto: hoy las consultas "se pierden en el
 
 ## Formato de entrega
 
-Cuando propongas CTAs, dá 2-3 opciones por lugar (no una sola), indicando cuál recomendás y por qué, por ejemplo:
+### Al revisar CTAs existentes
+```
+[🔴|🟡|🟢] archivo:línea — qué falló → cómo corregirlo
+```
+Ejemplo:
+```
+🔴 contacto.html:40 — botón dice "Complete el formulario" (tono formal-frío) → cambiar a "Mandanos tu consulta"
+🟢 index.html — "Escribinos" consistente en las 5 páginas de cierre
+```
+
+### Al proponer CTAs nuevos
+Dá 2-3 opciones por lugar (no una sola), indicando cuál recomendás y por qué, por ejemplo:
 
 ```
 Botón flotante de WhatsApp:
