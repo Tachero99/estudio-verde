@@ -45,7 +45,7 @@ Para sumar un proyecto nuevo a la grilla: duplicar `proyectos/casa-haras.html`, 
 - **Proceso de trabajo (Home):** la sección está armada con 4 pasos genéricos (charla → diseño → obra → entrega), marcada con `<!-- TODO: confirmar con la clienta -->` en `index.html`. Falta confirmar con Paula si se incluye y con qué pasos exactos.
 - **Logo definitivo:** por ahora se usa el nombre "Estudio Verde" tipografiado como wordmark en el header. El logo real queda pendiente para más adelante.
 - **Fotos reales faltantes:** hero de Home, "qué hacemos" (arquitectura y locales comerciales), fotos de Paula y Martín en Nosotros, y hero de las páginas internas siguen con placeholders (`picsum.photos`), marcados con comentarios `<!-- TODO -->` en el HTML. Las fotos de Casa Haras y Casa La Toscana ya están cargadas en `img/proyectos/`.
-- **Formulario de contacto (Formspree):** el formulario en `contacto.html` apunta a `https://formspree.io/f/TU_ID_AQUI`. Falta crear una cuenta gratuita en [formspree.io](https://formspree.io), crear un formulario que reenvíe a `santiago.romano@davinci.edu.ar`, y reemplazar `TU_ID_AQUI` por el ID real antes de publicar el sitio.
+- ~~**Formulario de contacto (Formspree)**~~ — resuelto: el formulario en `contacto.html` ya envía a través de `https://formspree.io/f/mykrbyva`, que reenvía a `santiago.romano@davinci.edu.ar`.
 - **Ficha técnica de proyectos:** los datos de ubicación exacta, superficie y servicios en las páginas de Casa Haras y Casa La Toscana son placeholders — completar con la información real de cada proyecto.
 - **Proyectos destacados:** confirmados como Casa Haras y Casa La Toscana según lo indicado por la clienta. Si se agregan más proyectos "destacados" a futuro, ajustar la sección correspondiente en `index.html`.
 
